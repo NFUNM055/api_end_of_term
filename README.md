@@ -45,6 +45,10 @@
 
 #### 原型
 
+![推荐](https://images.gitee.com/uploads/images/2019/1225/183927_141d0ebc_1648156.png "推荐.PNG")
+
+![日记](https://images.gitee.com/uploads/images/2019/1225/183957_1cc47e90_1648156.png "日记.PNG")
+
 #### api调用
 
 ##### 百度api
