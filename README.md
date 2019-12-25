@@ -113,7 +113,7 @@ SECRET_KEY = 'SriOcLgEstfCSy9u5oWR7vrUXpuW8SGQ'
 client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 text = "今天天气挺好的，心情也很好，但我说好减肥的，耐不住妈妈煮的鸡煲太好吃了，害我整整吃了两碗饭！"
 client.sentimentClassify(text)
-```python
+```
 结果：积极指数：0.98，消极指数：0.02，偏正向情绪。
 ```python
 {'log_id': 2523262217194262296,
