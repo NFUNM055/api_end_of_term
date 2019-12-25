@@ -54,7 +54,7 @@
 ##### 百度api
 
 1、果蔬识别——秋葵
-```
+```python
 import requests
 import base64
 
@@ -71,18 +71,18 @@ if response:
     print (response.json())
 ```
 结果：识别成功
-```
+```python
 {'log_id': 5186393473038834148, 'result_num': 5, 'result': [{'score': 0.6500539779663086, 'name': '黄秋葵'}, {'score': 0.34338581562042236, 'name': '秋葵'}, {'score': 0.0012838267721235752, 'name': '黄瓜'}, {'score': 0.0011446732096374035, 'name': '豌豆'}, {'score': 0.0007779692532494664, 'name': '非果蔬食材'}]}
 ```
 
 2、果蔬识别——枇杷
 
 结果：识别成功
-```
+```python
 {'log_id': 2907733790495041515, 'result_num': 5, 'result': [{'score': 0.8762322068214417, 'name': '枇杷'}, {'score': 0.12325529754161835, 'name': '枇杷果'}, {'score': 0.0002433160989312455, 'name': '非果蔬食材'}, {'score': 0.00013505088281817734, 'name': '海棠果'}, {'score': 1.188514033856336e-05, 'name': '大南果梨'}]}
 ```
 3、菜品识别——鸡肉煲
-```
+```python
 import requests
 import base64
 
@@ -99,11 +99,11 @@ if response:
     print (response.json())
 ```
 结果——识别成功
-```
+```python
 {'log_id': 1119793080360029112, 'result_num': 6, 'result': [{'calorie': '111', 'has_calorie': True, 'name': '鸡肉煲', 'probability': '0.419609'}, {'calorie': '162', 'has_calorie': True, 'name': '黄焖鸡', 'probability': '0.269348'}, {'has_calorie': False, 'name': '麻辣瓦香鸡', 'probability': '0.0402247'}, {'calorie': '260', 'has_calorie': True, 'name': '猪蹄', 'probability': '0.0341583'}, {'calorie': '223', 'has_calorie': True, 'name': '排骨煲', 'probability': '0.0267608'}, {'calorie': '128', 'has_calorie': True, 'name': '大盘鸡', 'probability': '0.0221576'}]}
 ```
 4、自然语音处理-情感倾向：
-```
+```python
 from aip import AipNlp
 
 APP_ID = '18021502'
@@ -113,9 +113,9 @@ SECRET_KEY = 'SriOcLgEstfCSy9u5oWR7vrUXpuW8SGQ'
 client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 text = "今天天气挺好的，心情也很好，但我说好减肥的，耐不住妈妈煮的鸡煲太好吃了，害我整整吃了两碗饭！"
 client.sentimentClassify(text)
-```
+```python
 结果：积极指数：0.98，消极指数：0.02，偏正向情绪。
-```
+```python
 {'log_id': 2523262217194262296,
  'text': '今天天气挺好的，心情也很好，但我说好减肥的，耐不住妈妈煮的鸡煲太好吃了，害我整整吃了两碗饭！',
  'items': [{'positive_prob': 0.976739,
