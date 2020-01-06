@@ -20,11 +20,9 @@
 
 3、用户想要吃一款美食，但是担心卡路里太高；
 
-4、；
+4、用户想要看看他人的饮食生活，找到更多新鲜感和不一样的食物；
 
-5、用户想要看看他人的饮食生活，找到更多新鲜感和不一样的食物；
-
-6、用户经过努力做了一份非常美味的菜品时，想要记录下来并和别人分享。
+5、用户经过努力做了一份非常美味的菜品时，想要记录下来并和别人分享。
 
 #### 加值宣言
 
@@ -53,6 +51,7 @@
 #### 原型
 
 - 更多原型和交互点击
+
 - 提供原型文档下载
 
 
@@ -138,24 +137,77 @@ client.sentimentClassify(text)
 
 - 菜品识别api:
 
-1、百度云菜品识别：（图片请点击-[百度菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E7%99%BE%E5%BA%A6ai%E8%8F%9C%E5%93%81%E8%AF%86%E5%88%AB%E5%AE%9A%E4%BB%B7_mh1578307870992.jpg)）；[百度菜品识别api功能](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E7%99%BE%E5%BA%A6%E4%BA%91%E8%8F%9C%E5%93%81%E8%BF%94%E5%9B%9E.jpg)
+1、[百度云菜品识别](https://ai.baidu.com/tech/imagerecognition/dish)：（图片请点击-[百度菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E7%99%BE%E5%BA%A6ai%E8%8F%9C%E5%93%81%E8%AF%86%E5%88%AB%E5%AE%9A%E4%BB%B7_mh1578307870992.jpg)；[百度菜品识别api功能](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E7%99%BE%E5%BA%A6%E4%BA%91%E8%8F%9C%E5%93%81%E8%BF%94%E5%9B%9E.jpg)）
 
-百度ai的菜品识别api有免费版和付费版，免费的调用量为500次/天，但是并发数不保证；付费版调用数无限制，并发数为10qps，大约0.3元可以调用一千次。
+百度ai的菜品识别api有免费版和付费版，可以用于个人开发和产品测试，也可以供企业使用。免费的调用量为500次/天，但是并发数不保证；付费版调用数无限制，并发数为10qps，大约0.3元可以调用一千次，调用量越多，收费越便宜。
 接口返回有：菜品名称、置信度、卡路里、百科信息等综合信息，而且支持自定义菜品识别。
 
 
+2、[阿里云菜品识别](https://market.aliyun.com/products/57124001/cmapi032952.html?spm=5176.10695662.1996646101.searchclickresult.5e6d7275Su2P78&aly_as=gTQ_BwDw#sku=yuncode2695200001)：（图片请点击-[阿里云菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E9%98%BF%E9%87%8C%E4%BA%91%E8%8F%9C%E5%93%81%E4%BB%B7%E6%A0%BC.jpg)；[阿里云菜品识别api返回](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E9%98%BF%E9%87%8C%E4%BA%91%E8%8F%9C%E5%93%81%E8%BF%94%E5%9B%9E_mh1578309088298.jpg)）
+
+阿里云的菜品识别仅支持50次免费试用，10元才可以调用1000次，价格要比百度贵得多，且成交数和评分都较低，网上能找到的参考文档也较少。返回参数仅有卡路里和名字，返回信息比百度少。
+
+返回结果示例
+```
+{
+  "result": [
+    {
+      "score": "0.82971",
+      "has_calorie": true,
+      "calorie": "41",
+      "name": "炒青菜"
+    },
+    {
+      "score": "0.085715",
+      "has_calorie": true,
+      "calorie": "35",
+      "name": "白灼菜心"
+    },
+    {
+      "score": "0.084575",
+      "has_calorie": true,
+      "calorie": "-1",
+      "name": "时令蔬菜"
+    }
+  ]
+}
+```
+
+3、[京东云菜品识别](https://www.jdcloud.com/cn/products/food-recognition)：（图片请点击-[京东云菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E4%BA%AC%E4%B8%9C%E4%BA%91%E8%8F%9C%E5%93%81%E5%AE%9A%E4%BB%B7.jpg)；[京东云菜品识别api功能](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E4%BA%AC%E4%B8%9C%E4%BA%91%E8%8F%9C%E5%93%81%E8%AF%86%E5%88%AB%E5%8A%9F%E8%83%BD_mh1578309120578.jpg);
+[京东云公测阶段](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E4%BA%AC%E4%B8%9C%E4%BA%91%E5%85%AC%E6%B5%8B.PNG)）
+
+京东云调用量限制为5000/日，现在处于公测阶段，可以免费试用，但由于开发时间不长，目前的不稳定性和不成熟性较高。而百度菜品识别api已经过了这一阶段，和较多公司有了合作案例。京东云仅支持检测中餐菜品，且识别的返回结果只有菜品名称。
 
 
-2、阿里云菜品识别：（图片请点击-[阿里云菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E9%98%BF%E9%87%8C%E4%BA%91%E8%8F%9C%E5%93%81%E4%BB%B7%E6%A0%BC.jpg)；[阿里云菜品识别api返回](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E9%98%BF%E9%87%8C%E4%BA%91%E8%8F%9C%E5%93%81%E8%BF%94%E5%9B%9E_mh1578309088298.jpg)
+4、[聚合数据](https://www.juhe.cn/docs/api/id/372)
 
+接口地址：http://apis.juhe.cn/dishDetect/index
 
-阿里云的菜品识别仅支持50次免费试用，10元才可以调用1000次，价格要比百度贵。成交数和评分都较低，网上能找到的参考文档也较少。返回参数仅有卡路里和名字，其他信息少。
+返回结果和百度的相似。另外，聚合数据还有[菜谱大全api](https://www.juhe.cn/docs/api/id/46)，对饮食类产品较友好。但是购买至少需要1000元，不适合个人开发者，比较适合企业使用。
 
-3、京东云菜品识别：（图片请点击-[京东云菜品识别api定价](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E4%BA%AC%E4%B8%9C%E4%BA%91%E8%8F%9C%E5%93%81%E5%AE%9A%E4%BB%B7.jpg)；[京东云菜品识别api功能](https://gitee.com/NFUNM055/api_end_of_term/blob/master/%E5%9B%BE%E7%89%87/%E4%BA%AC%E4%B8%9C%E4%BA%91%E8%8F%9C%E5%93%81%E8%AF%86%E5%88%AB%E5%8A%9F%E8%83%BD_mh1578309120578.jpg)
+- 果蔬识别api:
 
-京东云调用量限制为5000/日，现在处于公测阶段，可以免费试用，但由于开发时间不长，目前的不稳定性和不成熟性较高。而百度菜品识别api已经过了这一阶段，而且和其他公司有了很多合作案例。
-仅支持检测中餐菜品，且识别的返回结果只有菜品名称。
+1、[百度果蔬识别](https://ai.baidu.com/tech/imagerecognition/ingredient)
 
+可以用于个人开发和产品测试，也可以供企业使用。免费的调用量一次性共有3000次。开通付费后无限制。返回的结果仅有果蔬名字。
+
+2、[聚合数据](https://www.juhe.cn/docs/api/id/393)
+
+至少需要1000购买，不适合个人开发者，比较适合企业使用，约0.02元调用一次。
+
+3、腾讯云、阿里云的图像识别功能可以为所有种类的图片进行识别，包括果蔬、菜品，但没有细分种类，且返回信息少。
+
+#### 使用后风险报告：
+
+所使用的api为百度图像识别-菜品识别api和果蔬识别api、自然语言处理api。
+
+市场竞争程度：[百度图像识别api](https://ai.baidu.com/ai-doc/IMAGERECOGNITION/Kk3bcxbxj)是目前找到划分最为细的一个，并且官方的支持语言多。更多竞争者——阿里云、腾讯云、京东云、华为云。
+
+返回结果：菜品识别和果蔬识别的返回结果并没有十分丰富，而且不是所有识别的图片都会有禁忌人群、营养成分这些信息，水果蔬菜的识别结果也仅有名称。
+
+定价：如上所示，定价比大多数api便宜，且免费次数多。对个人和初创公司友好，资金缺乏时，可以使用免费版测试产品。
+
+准确性：图像识别的准确性比较高，使用api测试时发现在网上找的图识别准确率比在现实中拍的图要高，
 
 
 
