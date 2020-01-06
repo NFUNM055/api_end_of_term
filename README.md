@@ -48,12 +48,29 @@
 | 分析日记文字的情感倾向         | ⭐⭐      | 自然语言处理-情感分析 |较高|
 | 了解菜品的更多信息，如营养价值、禁忌人群等         | ⭐  | 图像识别-菜品识别 |一般（不是所有识别的菜品都有这些信息）|
 
+#### 产品流程图（若图片无法显示，请点开下方更多原型和交互超链接）
+
+![饮食日记流程图.png](https://upload-images.jianshu.io/upload_images/9460880-db36d40905f310d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 原型
 
-- 更多原型和交互点击
+- 拍照/上传菜品、果蔬的图片
+![原型1.PNG](https://upload-images.jianshu.io/upload_images/9460880-8108dea956baee59.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- 提供原型文档下载
+- 果蔬、菜品识别
+![原型2.PNG](https://upload-images.jianshu.io/upload_images/9460880-bd6c707ebba93e12.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+- 将图片添加到饮食日记；并对输入的文字日记进行情感倾向分析；连续编写7天日记，会在【我的】页形成一条情感曲线。
+![原型3.PNG](https://upload-images.jianshu.io/upload_images/9460880-312853e0b3db4148.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+- 分享自己的饮食日记到社区
+![原型4.PNG](https://upload-images.jianshu.io/upload_images/9460880-f9eedd77f59bdc30.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+ 
+
+- [更多原型和交互点击]( http://nfunm055.gitee.io/api-prototype)
+
+- [原型文档下载](https://github.com/NFUNM055/api-prototype)
 
 
 #### 人工智能概率性：
