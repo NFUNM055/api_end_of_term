@@ -61,10 +61,10 @@
 - 拍照/上传菜品、果蔬的图片
 ![原型1.PNG](https://upload-images.jianshu.io/upload_images/9460880-8108dea956baee59.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- 果蔬、菜品识别
+- 果蔬、菜品识别（图像识别api-果蔬识别、菜品识别）
 ![原型2.PNG](https://upload-images.jianshu.io/upload_images/9460880-bd6c707ebba93e12.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- 将图片添加到饮食日记；并对输入的文字日记进行情感倾向分析；连续编写7天日记，会在【我的】页形成一条情感曲线。
+- 将图片添加到饮食日记；并对输入的文字日记进行情感倾向分析；连续编写7天日记，会在【我的】页形成一条情感曲线。（自然语言处理api-情感倾向分析）
 ![原型3.PNG](https://upload-images.jianshu.io/upload_images/9460880-312853e0b3db4148.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 分享自己的饮食日记到社区
