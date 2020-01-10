@@ -1,5 +1,7 @@
 #### 产品
 
+[20x20下载](https://gitee.com/NFUNM055/ppt/blob/master/20X20ppt.pptx)
+
 | 产品名称  |饮食日记app  |
 | -------- |-------- |
 | 产品负责人 |刘丽冰 |
